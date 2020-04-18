@@ -2,7 +2,7 @@
 [TOC]
 
 ## 模型架构图
-![avatar](figures\model_sample.png)
+![avatar](figures/model_sample.png)
 
 ## 细节介绍
 
