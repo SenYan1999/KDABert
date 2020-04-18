@@ -16,6 +16,7 @@
 - $h_i^t$: $l_i^t$的hidden state
 - $\mathcal{D}_{ia}$: 区分$a_i^s$和$a_i^t$的Discriminator
 - $\mathcal{D}_{ih}$: 区分$h_i^s$和$h_i^t$的Discriminator
+张伍豪
 
 ### Define Loss
 $$L_{total}(\theta) = L(\theta) + \sum\limits_{i=1}^L \lambda^iL_{AD}^i$$
