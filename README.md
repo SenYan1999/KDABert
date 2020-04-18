@@ -28,9 +28,7 @@ $$L(\theta) = -\frac{1}{N}\sum\limits_{c=1}^{m}y_{ic}log\widehat{y}_{ic}$$
 对于$L_{AD}^i$我们使用KL散度进行测量。
 <p align="center"><img src="figures/formular_1.png"></p>
 
-其中，$p_{ai}^t$是$a_i^t$的分布函数，$p_{ai}^s$是$a_i^s$的分布函数，
-
-$p_{ia}^{d}$是$\mathcal{D}_{ia}$输出概率的分布函数；$p_{hi}^t$是$h_i^t$的分布函数，$p_{hi}^s$是$h_i^s$的分布函数$p_{ih}^{d}$是$\mathcal{D}_{ih}$输出概率的分布函数。
+![](figures/desc.png)
 
 ### Training Objective
 
