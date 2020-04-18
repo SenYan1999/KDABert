@@ -1,0 +1,51 @@
+This is BibTeX, Version 0.99d (TeX Live 2019/Arch Linux)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: conll-2019.aux
+The style file: acl_natbib.bst
+Reallocated glb_str_ptr (elt_size=8) to 20 items from 10.
+Reallocated global_strs (elt_size=20001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=8) to 20 items from 10.
+Reallocated singl_function (elt_size=8) to 100 items from 50.
+Database file #1: conll-2019.bib
+Reallocated wiz_functions (elt_size=8) to 6000 items from 3000.
+You've used 15 entries,
+            3571 wiz_defined-function locations,
+            800 strings with 10228 characters,
+and the built_in function-call counts, 12748 in all, are:
+= -- 1156
+> -- 492
+< -- 26
++ -- 158
+- -- 138
+* -- 832
+:= -- 1772
+add.period$ -- 60
+call.type$ -- 15
+change.case$ -- 145
+chr.to.int$ -- 18
+cite$ -- 15
+duplicate$ -- 858
+empty$ -- 974
+format.name$ -- 199
+if$ -- 2901
+int.to.chr$ -- 4
+int.to.str$ -- 1
+missing$ -- 162
+newline$ -- 79
+num.names$ -- 60
+pop$ -- 383
+preamble$ -- 1
+purify$ -- 106
+quote$ -- 0
+skip$ -- 649
+stack$ -- 0
+substring$ -- 628
+swap$ -- 486
+text.length$ -- 12
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 135
+warning$ -- 0
+while$ -- 85
+width$ -- 0
+write$ -- 198

@@ -1,0 +1,132 @@
+\begin{thebibliography}{15}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+
+\bibitem[{Choe and Charniak(2016)}]{DBLP:conf/emnlp/ChoeC16}
+Do~Kook Choe and Eugene Charniak. 2016.
+\newblock \href {http://aclweb.org/anthology/D/D16/D16-1257.pdf} {Parsing as
+  language modeling}.
+\newblock In \emph{Proceedings of the 2016 Conference on Empirical Methods in
+  Natural Language Processing, {EMNLP} 2016, Austin, Texas, USA, November 1-4,
+  2016}, pages 2331--2336.
+
+\bibitem[{Cross and Huang(2016)}]{DBLP:conf/emnlp/CrossH16}
+James Cross and Liang Huang. 2016.
+\newblock \href {http://aclweb.org/anthology/D/D16/D16-1001.pdf} {Span-based
+  constituency parsing with a structure-label system and provably optimal
+  dynamic oracles}.
+\newblock In \emph{Proceedings of the 2016 Conference on Empirical Methods in
+  Natural Language Processing, {EMNLP} 2016, Austin, Texas, USA, November 1-4,
+  2016}, pages 1--11.
+
+\bibitem[{Dyer et~al.(2016)Dyer, Kuncoro, Ballesteros, and
+  Smith}]{DBLP:conf/naacl/DyerKBS16}
+Chris Dyer, Adhiguna Kuncoro, Miguel Ballesteros, and Noah~A. Smith. 2016.
+\newblock \href {http://aclweb.org/anthology/N/N16/N16-1024.pdf} {Recurrent
+  neural network grammars}.
+\newblock In \emph{{NAACL} {HLT} 2016, The 2016 Conference of the North
+  American Chapter of the Association for Computational Linguistics: Human
+  Language Technologies, San Diego California, USA, June 12-17, 2016}, pages
+  199--209.
+
+\bibitem[{Fried et~al.(2017)Fried, Stern, and Klein}]{DBLP:conf/acl/FriedSK17}
+Daniel Fried, Mitchell Stern, and Dan Klein. 2017.
+\newblock \href {https://doi.org/10.18653/v1/P17-2025} {Improving neural
+  parsing by disentangling model combination and reranking effects}.
+\newblock In \emph{Proceedings of the 55th Annual Meeting of the Association
+  for Computational Linguistics, {ACL} 2017, Vancouver, Canada, July 30 -
+  August 4, Volume 2: Short Papers}, pages 161--166.
+
+\bibitem[{Hong and Huang(2018)}]{DBLP:conf/acl/HongH18}
+Juneki Hong and Liang Huang. 2018.
+\newblock \href {https://aclanthology.info/papers/P18-2076/p18-2076}
+  {Linear-time constituency parsing with rnns and dynamic programming}.
+\newblock In \emph{Proceedings of the 56th Annual Meeting of the Association
+  for Computational Linguistics, {ACL} 2018, Melbourne, Australia, July 15-20,
+  2018, Volume 2: Short Papers}, pages 477--483.
+
+\bibitem[{Kitaev and Klein(2018{\natexlab{a}})}]{DBLP:conf/acl/KleinK18}
+Nikita Kitaev and Dan Klein. 2018{\natexlab{a}}.
+\newblock \href {https://aclanthology.info/papers/P18-1249/p18-1249}
+  {Constituency parsing with a self-attentive encoder}.
+\newblock In \emph{Proceedings of the 56th Annual Meeting of the Association
+  for Computational Linguistics, {ACL} 2018, Melbourne, Australia, July 15-20,
+  2018, Volume 1: Long Papers}, pages 2675--2685.
+
+\bibitem[{Kitaev and
+  Klein(2018{\natexlab{b}})}]{DBLP:journals/corr/abs-1812-11760}
+Nikita Kitaev and Dan Klein. 2018{\natexlab{b}}.
+\newblock \href {http://arxiv.org/abs/1812.11760} {Multilingual constituency
+  parsing with self-attention and pre-training}.
+\newblock \emph{CoRR}, abs/1812.11760.
+
+\bibitem[{Liu and Zhang(2017{\natexlab{a}})}]{DBLP:journals/tacl/LiuZ17a}
+Jiangming Liu and Yue Zhang. 2017{\natexlab{a}}.
+\newblock \href {http://aclweb.org/anthology/Q17-1029} {In-order
+  transition-based constituent parsing}.
+\newblock \emph{Transactions of the Association for Computational Linguistics},
+  5:413--424.
+
+\bibitem[{Liu and Zhang(2017{\natexlab{b}})}]{DBLP:journals/tacl/LiuZ17}
+Jiangming Liu and Yue Zhang. 2017{\natexlab{b}}.
+\newblock \href {http://aclweb.org/anthology/Q17-1004} {Shift-reduce
+  constituent parsing with neural lookahead features}.
+\newblock \emph{Transactions of the Association for Computational Linguistics},
+  5:45--58.
+
+\bibitem[{Shen et~al.(2018)Shen, Lin, Jacob, Sordoni, Courville, and
+  Bengio}]{DBLP:conf/acl/BengioSCJLS18}
+Yikang Shen, Zhouhan Lin, Athul~Paul Jacob, Alessandro Sordoni, Aaron~C.
+  Courville, and Yoshua Bengio. 2018.
+\newblock \href {https://aclanthology.info/papers/P18-1108/p18-1108} {Straight
+  to the tree: Constituency parsing with neural syntactic distance}.
+\newblock In \emph{Proceedings of the 56th Annual Meeting of the Association
+  for Computational Linguistics, {ACL} 2018, Melbourne, Australia, July 15-20,
+  2018, Volume 1: Long Papers}, pages 1171--1180.
+
+\bibitem[{Stern et~al.(2017{\natexlab{a}})Stern, Andreas, and
+  Klein}]{DBLP:conf/acl/SternAK17}
+Mitchell Stern, Jacob Andreas, and Dan Klein. 2017{\natexlab{a}}.
+\newblock \href {https://doi.org/10.18653/v1/P17-1076} {A minimal span-based
+  neural constituency parser}.
+\newblock In \emph{Proceedings of the 55th Annual Meeting of the Association
+  for Computational Linguistics, {ACL} 2017, Vancouver, Canada, July 30 -
+  August 4, Volume 1: Long Papers}, pages 818--827.
+
+\bibitem[{Stern et~al.(2017{\natexlab{b}})Stern, Fried, and
+  Klein}]{DBLP:conf/emnlp/SternFK17}
+Mitchell Stern, Daniel Fried, and Dan Klein. 2017{\natexlab{b}}.
+\newblock \href {https://aclanthology.info/papers/D17-1178/d17-1178} {Effective
+  inference for generative neural parsing}.
+\newblock In \emph{Proceedings of the 2017 Conference on Empirical Methods in
+  Natural Language Processing, {EMNLP} 2017, Copenhagen, Denmark, September
+  9-11, 2017}, pages 1695--1700.
+
+\bibitem[{Teng and Zhang(2018)}]{DBLP:conf/coling/TengZ18}
+Zhiyang Teng and Yue Zhang. 2018.
+\newblock \href {https://aclanthology.info/papers/C18-1011/c18-1011} {Two local
+  models for neural constituent parsing}.
+\newblock In \emph{Proceedings of the 27th International Conference on
+  Computational Linguistics, {COLING} 2018, Santa Fe, New Mexico, USA, August
+  20-26, 2018}, pages 119--132.
+
+\bibitem[{Vinyals et~al.(2015)Vinyals, Kaiser, Koo, Petrov, Sutskever, and
+  Hinton}]{DBLP:conf/nips/VinyalsKKPSH15}
+Oriol Vinyals, Lukasz Kaiser, Terry Koo, Slav Petrov, Ilya Sutskever, and
+  Geoffrey~E. Hinton. 2015.
+\newblock \href
+  {http://papers.nips.cc/paper/5635-grammar-as-a-foreign-language} {Grammar as
+  a foreign language}.
+\newblock In \emph{Advances in Neural Information Processing Systems 28: Annual
+  Conference on Neural Information Processing Systems 2015, December 7-12,
+  2015, Montreal, Quebec, Canada}, pages 2773--2781.
+
+\bibitem[{Zhu et~al.(2013)Zhu, Zhang, Chen, Zhang, and
+  Zhu}]{DBLP:conf/acl/ZhuZCZZ13}
+Muhua Zhu, Yue Zhang, Wenliang Chen, Min Zhang, and Jingbo Zhu. 2013.
+\newblock \href {http://aclweb.org/anthology/P/P13/P13-1043.pdf} {Fast and
+  accurate shift-reduce constituent parsing}.
+\newblock In \emph{Proceedings of the 51st Annual Meeting of the Association
+  for Computational Linguistics, {ACL} 2013, 4-9 August 2013, Sofia, Bulgaria,
+  Volume 1: Long Papers}, pages 434--443.
+
+\end{thebibliography}

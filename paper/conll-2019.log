@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Arch Linux) (preloaded format=xelatex 2020.4.2)  18 APR 2020 18:35
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Arch Linux) (preloaded format=xelatex 2020.4.2)  18 APR 2020 22:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -856,71 +856,32 @@ Package fontspec Info: Font family 'FandolFang-Regular(0)' created for font
 File: images/multi_headed_attention.jpg Graphic file (type bmp)
 <images/multi_headed_attention.jpg>
 
+Overfull \hbox (18.01376pt too wide) in paragraph at lines 69--97
+ [] 
+ []
 
-Package natbib Warning: Citation `DBLP:conf/nips/VinyalsKKPSH15' on page 1 undefined on input line 75.
-
-
-Package natbib Warning: Citation `DBLP:conf/naacl/DyerKBS16' on page 1 undefined on input line 76.
-
-
-Package natbib Warning: Citation `DBLP:conf/acl/ZhuZCZZ13' on page 1 undefined on input line 77.
-
-
-Package natbib Warning: Citation `DBLP:conf/emnlp/CrossH16' on page 1 undefined on input line 78.
-
-
-Package natbib Warning: Citation `DBLP:journals/tacl/LiuZ17' on page 1 undefined on input line 79.
-
-
-Package natbib Warning: Citation `DBLP:conf/acl/SternAK17' on page 1 undefined on input line 80.
-
-
-Package natbib Warning: Citation `DBLP:journals/tacl/LiuZ17a' on page 1 undefined on input line 81.
-
-
-Package natbib Warning: Citation `DBLP:conf/acl/BengioSCJLS18' on page 1 undefined on input line 82.
-
-
-Package natbib Warning: Citation `DBLP:conf/acl/HongH18' on page 1 undefined on input line 83.
-
-
-Package natbib Warning: Citation `DBLP:conf/coling/TengZ18' on page 1 undefined on input line 84.
-
-
-Package natbib Warning: Citation `DBLP:conf/emnlp/SternFK17' on page 1 undefined on input line 85.
-
-
-Package natbib Warning: Citation `DBLP:conf/acl/KleinK18' on page 1 undefined on input line 86.
-
-
-Package natbib Warning: Citation `DBLP:conf/emnlp/ChoeC16' on page 1 undefined on input line 90.
-
-
-Package natbib Warning: Citation `DBLP:journals/tacl/LiuZ17a' on page 1 undefined on input line 91.
-
-
-Package natbib Warning: Citation `DBLP:conf/acl/FriedSK17' on page 1 undefined on input line 92.
-
-
-Package natbib Warning: Citation `DBLP:conf/acl/KleinK18' on page 1 undefined on input line 93.
-
-
-Package natbib Warning: Citation `DBLP:journals/corr/abs-1812-11760' on page 1 undefined on input line 94.
-
-
-Underfull \vbox (badness 1762) has occurred while \output is active []
-
- [1
+[1
 
 
 
-]
-No file conll-2019.bbl.
+] (./conll-2019.bbl
+Underfull \hbox (badness 2221) in paragraph at lines 23--30
+\OT1/lmr/m/it/10 Amer-i-can Chap-ter of the As-so-ci-a-tion for
+ []
 
-Package natbib Warning: There were undefined citations.
 
+Underfull \hbox (badness 1199) in paragraph at lines 23--30
+\OT1/lmr/m/it/10 Tech-nolo-gies, San Diego Cal-i-for-nia, USA,
+ []
+
+[2]
+Underfull \hbox (badness 1033) in paragraph at lines 97--103
+[]\OT1/lmr/m/n/10 Mitchell Stern, Daniel Fried, and Dan Klein.
+ []
+
+)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 111.
-[2
+ [3
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 111.
@@ -934,12 +895,12 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 111.
 (\end occurred when \ifx on line 161 was incomplete)
 (\end occurred when \iffalse on line 351 was incomplete) 
 Here is how much of TeX's memory you used:
- 27808 strings out of 492483
- 538150 string characters out of 6134980
- 645299 words of memory out of 5000000
- 32020 multiletter control sequences out of 15000+600000
- 561227 words of font info for 78 fonts, out of 8000000 for 9000
+ 27857 strings out of 492483
+ 539683 string characters out of 6134980
+ 646737 words of memory out of 5000000
+ 32066 multiletter control sequences out of 15000+600000
+ 565445 words of font info for 79 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  58i,11n,76p,989b,513s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on conll-2019.pdf (2 pages).
+Output written on conll-2019.pdf (3 pages).
