@@ -1,13 +1,9 @@
-<script type="text/javascript" async
-src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js? 
-config=TeX-MML-AM_CHTML"
-</script>
 # KDABert: Knowledge Distillation with Generative Adversarial Networks for Bert Model Compression
 
 [TOC]
 
 ## 模型架构图
-![avatar](figures/model_sample.png)
+![](figures/model_sample.png)
 
 ## Methods
 ### Notations
@@ -30,10 +26,7 @@ $$L(\theta) = -\frac{1}{N}\sum\limits_{c=1}^{m}y_{ic}log\widehat{y}_{ic}$$
 其中，$N$为样本数量，$c$为类别数目。
 
 对于$L_{AD}^i$我们使用KL散度进行测量。
-$$
-L_{AD}^i(\theta) = \mathbb{E}_{a\sim P_{ai}^t}[logP_{ia}^d(a)] + \mathbb{E}_{a\sim P_{ai}^s}[log(1-P_{ia}^d(a))] \\
-+ \mathbb{E}_{h\sim P_{hi}^t}[logP_{ih}^d(h)] + \mathbb{E}_{h\sim P_{hi}^s}[log(1-P_{ih}^d(h))]
-$$
+<div align=center> ![](figures/formular_1.png)
 
 其中，$p_{ai}^t$是$a_i^t$的分布函数，$p_{ai}^s$是$a_i^s$的分布函数，$p_{ia}^{d}$是$\mathcal{D}_{ia}$输出概率的分布函数；$p_{hi}^t$是$h_i^t$的分布函数，$p_{hi}^s$是$h_i^s$的分布函数$p_{ih}^{d}$是$\mathcal{D}_{ih}$输出概率的分布函数。
 
