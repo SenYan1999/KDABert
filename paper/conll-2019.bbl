@@ -1,0 +1,79 @@
+\begin{thebibliography}{10}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+
+\bibitem[{Devlin et~al.(2018)Devlin, Chang, Lee, and
+  Toutanova}]{DBLP:journals/corr/abs-1810-04805}
+Jacob Devlin, Ming{-}Wei Chang, Kenton Lee, and Kristina Toutanova. 2018.
+\newblock \href {http://arxiv.org/abs/1810.04805} {{BERT:} pre-training of deep
+  bidirectional transformers for language understanding}.
+\newblock \emph{CoRR}, abs/1810.04805.
+
+\bibitem[{Jiao et~al.(2019)Jiao, Yin, Shang, Jiang, Chen, Li, Wang, and
+  Liu}]{jiao2019tinybert}
+Xiaoqi Jiao, Yichun Yin, Lifeng Shang, Xin Jiang, Xiao Chen, Linlin Li, Fang
+  Wang, and Qun Liu. 2019.
+\newblock \href {http://arxiv.org/abs/1909.10351} {Tinybert: Distilling bert
+  for natural language understanding}.
+
+\bibitem[{Liu et~al.(2019)Liu, Ott, Goyal, Du, Joshi, Chen, Levy, Lewis,
+  Zettlemoyer, and Stoyanov}]{DBLP:journals/corr/abs-1907-11692}
+Yinhan Liu, Myle Ott, Naman Goyal, Jingfei Du, Mandar Joshi, Danqi Chen, Omer
+  Levy, Mike Lewis, Luke Zettlemoyer, and Veselin Stoyanov. 2019.
+\newblock \href {http://arxiv.org/abs/1907.11692} {Roberta: {A} robustly
+  optimized {BERT} pretraining approach}.
+\newblock \emph{CoRR}, abs/1907.11692.
+
+\bibitem[{Peters et~al.(2018)Peters, Neumann, Iyyer, Gardner, Clark, Lee, and
+  Zettlemoyer}]{DBLP:journals/corr/abs-1802-05365}
+Matthew~E. Peters, Mark Neumann, Mohit Iyyer, Matt Gardner, Christopher Clark,
+  Kenton Lee, and Luke Zettlemoyer. 2018.
+\newblock \href {http://arxiv.org/abs/1802.05365} {Deep contextualized word
+  representations}.
+\newblock \emph{CoRR}, abs/1802.05365.
+
+\bibitem[{Radford et~al.(2019)Radford, Wu, Child, Luan, Amodei, and
+  Sutskever}]{radford2019language}
+Alec Radford, Jeff Wu, Rewon Child, David Luan, Dario Amodei, and Ilya
+  Sutskever. 2019.
+\newblock Language models are unsupervised multitask learners.
+
+\bibitem[{Raffel et~al.(2019)Raffel, Shazeer, Roberts, Lee, Narang, Matena,
+  Zhou, Li, and Liu}]{raffel2019exploring}
+Colin Raffel, Noam Shazeer, Adam Roberts, Katherine Lee, Sharan Narang, Michael
+  Matena, Yanqi Zhou, Wei Li, and Peter~J. Liu. 2019.
+\newblock \href {http://arxiv.org/abs/1910.10683} {Exploring the limits of
+  transfer learning with a unified text-to-text transformer}.
+
+\bibitem[{Rajpurkar et~al.(2016)Rajpurkar, Zhang, Lopyrev, and
+  Liang}]{rajpurkar-etal-2016-squad}
+Pranav Rajpurkar, Jian Zhang, Konstantin Lopyrev, and Percy Liang. 2016.
+\newblock \href {https://doi.org/10.18653/v1/D16-1264} {{SQ}u{AD}: 100,000+
+  questions for machine comprehension of text}.
+\newblock In \emph{Proceedings of the 2016 Conference on Empirical Methods in
+  Natural Language Processing}, pages 2383--2392, Austin, Texas. Association
+  for Computational Linguistics.
+
+\bibitem[{Sun et~al.(2019)Sun, Cheng, Gan, and Liu}]{sun2019patient}
+Siqi Sun, Yu~Cheng, Zhe Gan, and Jingjing Liu. 2019.
+\newblock \href {http://arxiv.org/abs/1908.09355} {Patient knowledge
+  distillation for bert model compression}.
+
+\bibitem[{Wang et~al.(2018)Wang, Singh, Michael, Hill, Levy, and
+  Bowman}]{wang-etal-2018-glue}
+Alex Wang, Amanpreet Singh, Julian Michael, Felix Hill, Omer Levy, and Samuel
+  Bowman. 2018.
+\newblock \href {https://doi.org/10.18653/v1/W18-5446} {{GLUE}: A multi-task
+  benchmark and analysis platform for natural language understanding}.
+\newblock In \emph{Proceedings of the 2018 {EMNLP} Workshop {B}lackbox{NLP}:
+  Analyzing and Interpreting Neural Networks for {NLP}}, pages 353--355,
+  Brussels, Belgium. Association for Computational Linguistics.
+
+\bibitem[{Yang et~al.(2019)Yang, Dai, Yang, Carbonell, Salakhutdinov, and
+  Le}]{DBLP:journals/corr/abs-1906-08237}
+Zhilin Yang, Zihang Dai, Yiming Yang, Jaime~G. Carbonell, Ruslan Salakhutdinov,
+  and Quoc~V. Le. 2019.
+\newblock \href {http://arxiv.org/abs/1906.08237} {Xlnet: Generalized
+  autoregressive pretraining for language understanding}.
+\newblock \emph{CoRR}, abs/1906.08237.
+
+\end{thebibliography}

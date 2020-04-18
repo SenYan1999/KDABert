@@ -15,8 +15,6 @@
 \usepackage{multirow}
 \usepackage[OT1]{fontenc}
 
-
-
 \aclfinalcopy
 
 \newcommand\confname{CoNLL 2019}
@@ -33,79 +31,40 @@
 
 \title{KDABert: Knowledge Distillation with Generative Adversarial Networks for Bert Model Compression}
 
-\author{闫森\\
-  \texttt{2017111497} \\}
+\author{
+  闫森, \qquad 张伍豪， \qquad 胥进 \\
+  \texttt{2017111497, 2017111497, 2017111497}
+}
 
 \date{}
 
 \begin{document}
+\bibliographystyle{acl_natbib}
 \maketitle
 \begin{abstract}
-    这里是摘要。这里是摘要。这里是摘要。这里是摘要。这里是摘要。这里是摘要。这里是摘要。
-    这里是摘要。这里是摘要。这里是摘要。这里是摘要。这里是摘要。这里是摘要。这里是摘要。
+    近年来，预处理模型已经在NLP领域取得了巨大的成功，BERT\cite[]{DBLP:journals/corr/abs-1810-04805}, XLNet\cite{DBLP:journals/corr/abs-1906-08237}，
+    RoBERTa\cite{DBLP:journals/corr/abs-1907-11692}等预训练模型在GLUE，SQuAD等公开数据集榜单上面都取得了优异的成绩。但是这些预训练模型动辄就是成百上千万的参数，
+    使得他们不能很好的满足用户对响应速度的要求。除此之外，数量巨大的参数，也使得这些深度网络不能在用户终端如手机等设备上面运行。在这种需求下，对预训练模型进行压缩就有很大
+    的意义。我们提出了KDABert，不同于以往的知识蒸馏方法，KDABert使用对抗训练对Teacher中的模型进行蒸馏，得到Stuudent模型。这使得Student模型不会对Teacher模型的hidden 
+    state过拟合，一定程度上提高了模型的鲁棒性。
 \end{abstract}
 
 \section{介绍}
-\label{Sec:Introduction}
-这里是介绍。这里是介绍。这里是介绍。这里是介绍。这里是介绍。这里是介绍。这里是介绍。
-这里是介绍。这里是介绍。这里是介绍。这里是介绍。这里是介绍。这里是介绍。这里是介绍。
+预训练模型(PTMs)在实践中已经被证明能够很好的从大量的语料库里面学习到语言的表征向量。ELMo\cite{DBLP:journals/corr/abs-1802-05365},GPT-2\cite{radford2019language},
+BERT\cite{DBLP:journals/corr/abs-1810-04805}等PTMs已经在许多NLP任务中取得了很大的成功。例如NLU任务GLUE\cite{wang-etal-2018-glue},QA任务SQuAD\cite{rajpurkar-etal-2016-squad}
+等。
 
-\begin{figure}[htbp]
-    \centering
-    \includegraphics[width=\linewidth]{images/multi_headed_attention.jpg}
-    \caption{Transformer结构。}
-    \label{Fig:multi_headed_attention}
-\end{figure}
+尽管PTMs在这些NLP领域取得了巨大成功，他们对计算资源的海量需求也导致这些模型很难在客户终端上面运行，限制了工程上的用途。例如BERT-base就有12个Transformer Layer，每个Transformer有12个head，
+hidden state的维度是768，总计110M个参数。从头开始训练需要在4-16个GPU上面跑4天。而这些预训练模型的参数数目也是越来越大，如目前的Google T5\cite{raffel2019exploring}就有11B参数，即使在
+一般的GPU服务器上面fine-tuning这样的模型，也会变得很耗时间。因此对这样的PTMs进行模型的压缩，就变得非常有意义。
 
-\section{实验}
-这里是实验。这里是实验。这里是实验。这里是实验。这里是实验。这里是实验。这里是实验。
-这里是实验。这里是实验。这里是实验。这里是实验。这里是实验。这里是实验。这里是实验。
-这里是实验。这里是实验。这里是实验。这里是实验。这里是实验。这里是实验。这里是实验。
-这里是实验。这里是实验。这里是实验。这里是实验。这里是实验。这里是实验。这里是实验。
-这里是实验。这里是实验。这里是实验。这里是实验。这里是实验。这里是实验。这里是实验。
-\begin{table}[htbp]
-    \normalsize
-    \begin{center}
-        \begin{tabular}{l|ccc}
-            \hline
-            模型                                     & LR   & LP   & F1            \\
-            \hline
-            \textbf{单模型}                                                         \\
-            \hline
-            \citet{DBLP:conf/nips/VinyalsKKPSH15}     & -    & -    & 88.3          \\
-            \citet{DBLP:conf/naacl/DyerKBS16}         & -    & -    & 89.8          \\
-            \citet{DBLP:conf/acl/ZhuZCZZ13}           & 90.2 & 90.7 & 90.4          \\
-            \citet{DBLP:conf/emnlp/CrossH16}          & 90.5 & 92.1 & 91.3          \\
-            \citet{DBLP:journals/tacl/LiuZ17}         & 91.3 & 92.1 & 91.7          \\
-            \citet{DBLP:conf/acl/SternAK17}           & 90.3 & 93.2 & 91.8          \\
-            \citet{DBLP:journals/tacl/LiuZ17a}        & -    & -    & 91.8          \\
-            \citet{DBLP:conf/acl/BengioSCJLS18}       & 92.0 & 91.7 & 91.8          \\
-            \citet{DBLP:conf/acl/HongH18}             & 91.5 & 92.5 & 92.0          \\
-            \citet{DBLP:conf/coling/TengZ18}          & 92.2 & 92.5 & 92.4          \\
-            \citet{DBLP:conf/emnlp/SternFK17}         & 92.5 & 92.5 & 92.5          \\
-            \citet{DBLP:conf/acl/KleinK18}            & 93.2 & 93.9 & \textbf{93.6} \\
-            \hline\hline
-            \textbf{非单模型}                                         \\
-            \hline
-            \citet{DBLP:conf/emnlp/ChoeC16}           & -    & -    & 93.8          \\
-            \citet{DBLP:journals/tacl/LiuZ17a}        & -    & -    & 94.2          \\
-            \citet{DBLP:conf/acl/FriedSK17}           & -    & -    & 94.7          \\
-            \citet{DBLP:conf/acl/KleinK18}            & 94.9 & 95.4 & 95.1          \\
-            \citet{DBLP:journals/corr/abs-1812-11760} & 95.6 & 96.0 & \textbf{95.8} \\
-            \hline
-        \end{tabular}
-    \end{center}
-    \caption{不同模型在PTB测试集上的最终结果。}
-    \label{Tab:FinalResults}
-\end{table}
+以往的知识蒸馏方法大多采用MSE的方式来从Teacher模型中学习知识\cite{jiao2019tinybert,sun2019patient}，但是这样做的问题在于，我们的Student模型容易过拟合，其泛化能力不足。原因在于，我们通过
+MSE的方法，严格的希望Student某个位置模型的输出等于Teacher模型对应位置的输出，由于Student模型和Teacher模型的结构不同，模型内部的计算有差异，很可能$||P_s(y|x) - P_t(y|x)||_2$很小但是
+$||P_s(y|x+\epsilon) - P_t(y|x+\epsilon)||_2$却很大($P_s和P_t$分别为Student模型和Teacher模型的分布函数, $||\epsilon||_2 < 1$)。
 
-
-\section*{致谢}
-这里是致谢。这里是致谢。这里是致谢。这里是致谢。这里是致谢。这里是致谢。这里是致谢。
-这里是致谢。这里是致谢。这里是致谢。这里是致谢。这里是致谢。这里是致谢。这里是致谢。
-
+为此，我们提出了\textbf{KDABert}：\textbf{K}nowledge \textbf{D}istillation with generative \textbf{A}dversarial networks for \textbf{Bert} Model Compression。该模型的改进主要分为
+使用对抗训练代替MSE，使Student Model从Teacher Model中蒸馏知识。
 \newpage
 \bibliography{conll-2019}
-\bibliographystyle{acl_natbib}
 
 \end{document}
