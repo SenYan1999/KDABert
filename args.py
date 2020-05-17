@@ -26,13 +26,14 @@ parser.add_argument('--hidden_dropout_prob', type=float, default=0.1)
 # train
 parser.add_argument('--batch_size', type=int, default=32)
 parser.add_argument('--num_epoch', type=int, default=6)
-parser.add_argument('--lr', type=float, default=2e-5)
+parser.add_argument('--s_lr', type=float, default=2e-5)
+parser.add_argument('--d_lr', type=float, default=2e-5)
 parser.add_argument('--drop_out', type=float, default=0.1)
 parser.add_argument('--print_interval', type=int, default=100)
 
 # save & log
-parser.add_argument('--log_path', type=str, default='log/log.log')
-parser.add_argument('--save_path', type=str, default='save_model/')
+parser.add_argument('--log_file', type=str, default='log/log.log')
+parser.add_argument('--save_dir', type=str, default='save_models/')
 
 # parse args
 args = parser.parse_args()

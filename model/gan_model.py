@@ -2,13 +2,20 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-class KDAGan(nn.Module):
-    def __init__(self, student, teacher, discriminator):
-        super(KDAGan, self).__init__()
-        self.student = student
-        self.teacher = teacher
-        self.discriminator = discriminator
+from .student_model import Transformer
+from .discriminator import Discriminator
+from transformers import BertModel
 
+class KDABert(nn.Module):
+    def __init__(self, student=None, teacher=None, discriminator=None, config=None, bert_name=None):
+        super(KDABert, self).__init__()
+
+        if(student == None and teacher == None and discriminator == None):
+            assert(config != None and bert_name != None)
+
+        self.student = student if student != None else Transformer(config)
+        self.teacher = teacher if teacher != None else BertModel.from_pretrained(bert_name)
+        self.discriminator = discriminator if discriminator != None else Discriminator(config['hidden_size'])
 
     def forward(self, kwargs):
         student_pooler_out, student_logits = self.student(kwargs)
