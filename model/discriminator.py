@@ -13,8 +13,10 @@ class Discriminator(nn.Module):
             nn.Linear(input_dim // 4, 2)
         )
         
-    def forward(self, pooler_output):
-        logits = self.mlp(pooler_output)
+    def forward(self, output):
+        output = output.permute(0, 2, 1)
+        output = F.max_pool1d(output, kernel_size=output.shape[-1]).squeeze()
+        logits = self.mlp(output)
         logits = F.log_softmax(logits, dim=-1)
         return logits
         
