@@ -1,0 +1,172 @@
+Sender: LSF System <lsfadmin@gauss01>
+Subject: Job 14706: <KDAEvaluate> in cluster <cjdx.cluster> Exited
+
+Job <KDAEvaluate> was submitted from host <alpha02> by user <dl04> in cluster <cjdx.cluster> at Wed Jun 10 21:05:26 2020
+Job was executed on host(s) <gauss01>, in queue <gauss>, as user <dl04> in cluster <cjdx.cluster> at Wed Jun 10 21:17:04 2020
+</nfsshare/home/dl04> was used as the home directory.
+</nfsshare/home/dl04/KDABert/experiment> was used as the working directory.
+Started at Wed Jun 10 21:17:04 2020
+Terminated at Wed Jun 10 21:17:07 2020
+Results reported at Wed Jun 10 21:17:07 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -J KDAEvaluate
+#BSUB -e /nfsshare/home/dl04/KDABert/experiment/log/kda.err
+#BSUB -o /nfsshare/home/dl04/KDABert/experiment/log/kda.out
+#BSUB -n 1
+#BSUB -q gauss
+#BSUB -R "select [ngpus>0] rusage [ngpus_excl_p=1]"
+
+# python -m torch.distributed.launch --nproc_per_node=4 main.py --do_train  --log_file logs/eval.log --fp16 --distributed
+python main.py --do_train  --log_file logs/eval.log --fp16 
+
+------------------------------------------------------------
+
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   2.79 sec.
+    Max Memory :                                 19 MB
+    Average Memory :                             19.00 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                5
+    Run time :                                   10 sec.
+    Turnaround time :                            701 sec.
+
+The output (if any) follows:
+
+
+
+PS:
+
+Read file </nfsshare/home/dl04/KDABert/experiment/log/kda.err> for stderr output of this job.
+
+Sender: LSF System <lsfadmin@gauss04>
+Subject: Job 14707: <KDAEvaluate> in cluster <cjdx.cluster> Exited
+
+Job <KDAEvaluate> was submitted from host <alpha02> by user <dl04> in cluster <cjdx.cluster> at Wed Jun 10 21:06:03 2020
+Job was executed on host(s) <gauss04>, in queue <gauss>, as user <dl04> in cluster <cjdx.cluster> at Wed Jun 10 21:17:55 2020
+</nfsshare/home/dl04> was used as the home directory.
+</nfsshare/home/dl04/KDABert/experiment> was used as the working directory.
+Started at Wed Jun 10 21:17:55 2020
+Terminated at Wed Jun 10 21:18:00 2020
+Results reported at Wed Jun 10 21:18:00 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -J KDAEvaluate
+#BSUB -e /nfsshare/home/dl04/KDABert/experiment/log/kda.err
+#BSUB -o /nfsshare/home/dl04/KDABert/experiment/log/kda.out
+#BSUB -n 1
+#BSUB -q gauss
+#BSUB -R "select [ngpus>0] rusage [ngpus_excl_p=1]"
+
+# python -m torch.distributed.launch --nproc_per_node=4 main.py --do_train  --log_file logs/eval.log --fp16 --distributed
+python main.py --do_train  --log_file logs/eval.log --fp16 
+
+------------------------------------------------------------
+
+Exited with exit code 2.
+
+Resource usage summary:
+
+    CPU time :                                   5.79 sec.
+    Max Memory :                                 20 MB
+    Average Memory :                             20.00 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                5
+    Run time :                                   5 sec.
+    Turnaround time :                            717 sec.
+
+The output (if any) follows:
+
+
+
+PS:
+
+Read file </nfsshare/home/dl04/KDABert/experiment/log/kda.err> for stderr output of this job.
+
+Sender: LSF System <lsfadmin@gauss04>
+Subject: Job 14708: <KDAEvaluate> in cluster <cjdx.cluster> Exited
+
+Job <KDAEvaluate> was submitted from host <alpha02> by user <dl04> in cluster <cjdx.cluster> at Wed Jun 10 21:07:29 2020
+Job was executed on host(s) <gauss04>, in queue <gauss>, as user <dl04> in cluster <cjdx.cluster> at Wed Jun 10 21:19:22 2020
+</nfsshare/home/dl04> was used as the home directory.
+</nfsshare/home/dl04/KDABert/experiment> was used as the working directory.
+Started at Wed Jun 10 21:19:22 2020
+Terminated at Wed Jun 10 21:19:39 2020
+Results reported at Wed Jun 10 21:19:39 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -J KDAEvaluate
+#BSUB -e /nfsshare/home/dl04/KDABert/experiment/log/kda.err
+#BSUB -o /nfsshare/home/dl04/KDABert/experiment/log/kda.out
+#BSUB -n 1
+#BSUB -q gauss
+#BSUB -R "select [ngpus>0] rusage [ngpus_excl_p=1]"
+
+# python -m torch.distributed.launch --nproc_per_node=4 main.py --do_train  --log_file logs/eval.log --fp16 --distributed
+python main.py --do_train  --fp16 
+
+------------------------------------------------------------
+
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   11.85 sec.
+    Max Memory :                                 1323 MB
+    Average Memory :                             843.60 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                64
+    Run time :                                   17 sec.
+    Turnaround time :                            730 sec.
+
+The output (if any) follows:
+
+Selected optimization level O1:  Insert automatic casts around Pytorch functions and Tensor methods.
+
+Defaults for this optimization level are:
+enabled                : True
+opt_level              : O1
+cast_model_type        : None
+patch_torch_functions  : True
+keep_batchnorm_fp32    : None
+master_weights         : None
+loss_scale             : dynamic
+Processing user overrides (additional kwargs that are not None)...
+After processing overrides, optimization options are:
+enabled                : True
+opt_level              : O1
+cast_model_type        : None
+patch_torch_functions  : True
+keep_batchnorm_fp32    : None
+master_weights         : None
+loss_scale             : dynamic
+
+
+PS:
+
+Read file </nfsshare/home/dl04/KDABert/experiment/log/kda.err> for stderr output of this job.
+

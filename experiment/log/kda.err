@@ -1,0 +1,46 @@
+Traceback (most recent call last):
+  File "main.py", line 4, in <module>
+    from args import args
+  File "/nfsshare/home/dl04/KDABert/experiment/args.py", line 37, in <module>
+    parser.add_argument('--distributed', action='store_true')
+  File "/nfsshare/apps/anaconda3/lib/python3.7/argparse.py", line 1367, in add_argument
+    return self._add_action(action)
+  File "/nfsshare/apps/anaconda3/lib/python3.7/argparse.py", line 1730, in _add_action
+    self._optionals._add_action(action)
+  File "/nfsshare/apps/anaconda3/lib/python3.7/argparse.py", line 1571, in _add_action
+    action = super(_ArgumentGroup, self)._add_action(action)
+  File "/nfsshare/apps/anaconda3/lib/python3.7/argparse.py", line 1381, in _add_action
+    self._check_conflict(action)
+  File "/nfsshare/apps/anaconda3/lib/python3.7/argparse.py", line 1520, in _check_conflict
+    conflict_handler(action, confl_optionals)
+  File "/nfsshare/apps/anaconda3/lib/python3.7/argparse.py", line 1529, in _handle_conflict_error
+    raise ArgumentError(action, message % conflict_string)
+argparse.ArgumentError: argument --distributed: conflicting option string: --distributed
+usage: main.py [-h] [--do_prepare] [--do_train] [--restrict_dataset] [--fp16]
+               [--distributed] [--local_rank LOCAL_RANK] [--data_dir DATA_DIR]
+               [--task TASK] [--max_len MAX_LEN] [--bert_name BERT_NAME]
+               [--bert_type BERT_TYPE] [--K K] [--epsilon EPSILON]
+               [--alpha ALPHA] [--beta BETA] [--mu MU]
+               [--batch_size BATCH_SIZE] [--num_epoch NUM_EPOCH] [--lr LR]
+               [--drop_out DROP_OUT] [--print_interval PRINT_INTERVAL]
+               [--log_path LOG_PATH] [--save_path SAVE_PATH]
+main.py: error: unrecognized arguments: --log_file logs/eval.log
+2020-06-10 21:19:28.014973: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libnvinfer.so.6'; dlerror: libnvinfer.so.6: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /nfsshare/lsf10.1/10.1/linux2.6-glibc2.3-x86_64/lib:/nfsshare/apps/cuda-10.1/lib64
+2020-06-10 21:19:28.015243: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libnvinfer_plugin.so.6'; dlerror: libnvinfer_plugin.so.6: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /nfsshare/lsf10.1/10.1/linux2.6-glibc2.3-x86_64/lib:/nfsshare/apps/cuda-10.1/lib64
+2020-06-10 21:19:28.015261: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:30] Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+Traceback (most recent call last):
+  File "main.py", line 83, in <module>
+    train(logger)
+  File "main.py", line 64, in train
+    model, optimizer = amp.initialize(model, optimizer, opt_level='O1')
+  File "/nfsshare/home/dl04/.local/lib/python3.7/site-packages/apex/amp/frontend.py", line 358, in initialize
+    return _initialize(models, optimizers, _amp_state.opt_properties, num_losses, cast_model_outputs)
+  File "/nfsshare/home/dl04/.local/lib/python3.7/site-packages/apex/amp/_initialize.py", line 171, in _initialize
+    check_params_fp32(models)
+  File "/nfsshare/home/dl04/.local/lib/python3.7/site-packages/apex/amp/_initialize.py", line 87, in check_params_fp32
+    name, param.type()))
+  File "/nfsshare/home/dl04/.local/lib/python3.7/site-packages/apex/amp/_amp_state.py", line 32, in warn_or_err
+    raise RuntimeError(msg)
+RuntimeError: Found param bert.embeddings.word_embeddings.weight with type torch.cuda.HalfTensor, expected torch.cuda.FloatTensor.
+When using amp.initialize, you do not need to call .half() on your model
+before passing it, no matter what optimization level you choose.
